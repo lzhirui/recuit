@@ -16,6 +16,10 @@
             margin: 0 auto;
         }
 
+        body {
+            display: none;
+        }
+
         .swiper-slide {
             position: relative;
         }
@@ -74,11 +78,11 @@
             border-radius: 5px;
             box-shadow: 0px 2px 2px #f8f8f8;
             margin-top: 37px;
-            transition:all 0.6s;
+            transition: all 0.6s;
             overflow: hidden;
         }
 
-        .jobs-content dl:hover{
+        .jobs-content dl:hover {
             transform: scale(1.07);
             margin-top: 20px;
         }
@@ -136,7 +140,8 @@
             justify-content: space-between;
             align-items: center;
         }
-        .type-content{
+
+        .type-content {
             position: relative;
             top: 0;
             left: 0;
@@ -144,28 +149,34 @@
             height: 432px;
             overflow: hidden;
         }
-        .type-bottom{
+
+        .type-bottom {
             position: absolute;
             width: 100%;
             height: 100%;
             left: 0;
             top: 105px;
-            background: rgba(0,0,0,0);
-            transition:all 0.6s;
+            background: rgba(0, 0, 0, 0);
+            transition: all 0.6s;
         }
-        .type-bottom:hover{
+
+        .type-bottom:hover {
             top: 0px;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0, 0, 0, 0.4);
         }
 
-
-        @keyframes type-bottom
-        {
-            from {top:105px;background: rgba(0,0,0,0);}
-            to {top:0px;background: rgba(0,0,0,0.4);}
+        @keyframes type-bottom {
+            from {
+                top: 105px;
+                background: rgba(0, 0, 0, 0);
+            }
+            to {
+                top: 0px;
+                background: rgba(0, 0, 0, 0.4);
+            }
         }
 
-        .type-title{
+        .type-title {
             font-family: MicrosoftYaHei-Bold;
             font-size: 22px;
             line-height: 22px;
@@ -173,7 +184,8 @@
             text-align: center;
             margin-top: 170px;
         }
-        .type-text{
+
+        .type-text {
             font-family: MicrosoftYaHei;
             font-size: 15px;
             line-height: 22px;
@@ -182,21 +194,25 @@
             margin-top: 35px;
             padding: 0 47px;
         }
-        .our-school{
+
+        .our-school {
             width: 1350px;
             margin: 165px auto 0;
         }
-        .our-school-top{
+
+        .our-school-top {
             display: flex;
             justify-content: center;
         }
-        .our-school-bottom{
+
+        .our-school-bottom {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
         }
-        .our-school-bottom-content{
+
+        .our-school-bottom-content {
             margin-top: 49px;
             width: 670px;
             height: 460px;
@@ -204,14 +220,16 @@
             position: relative;
             top: 0;
             left: 0;
-            transition:all 1s;
+            transition: all 1s;
             border-radius: 5px;
         }
-        .our-school-bottom-content:hover .our-school-bottom-b{
+
+        .our-school-bottom-content:hover .our-school-bottom-b {
             height: 100%;
             top: 0;
         }
-        .our-school-bottom-b{
+
+        .our-school-bottom-b {
             position: absolute;
             top: 174px;
             height: 112px;
@@ -225,77 +243,104 @@
             color: #ffffff;
             width: 100%;
             text-align: center;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0, 0, 0, 0.4);
             line-height: 112px;
-            transition:all 1s;
+            transition: all 1s;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .Locations-english{
+
+        .Locations-english {
             margin: 176px auto 0px;
         }
-        .Locations-english div{
+
+        .Locations-english div {
             display: flex;
             justify-content: center;
             align-items: center;
 
         }
-        .Locations-english-b{
+
+        .Locations-english-b {
             margin-top: 72px;
         }
-        .how-it{
+
+        .how-it {
             margin: 213px auto 0px;
             width: 1350px;
         }
-        .how-it-t{
-            display:flex;
+
+        .how-it-t {
+            display: flex;
             justify-content: center;
         }
-        .how-it-b{
+
+        .how-it-b {
             margin-top: 57px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .how-it-content-t{
+
+        .how-it-content-t {
             display: flex;
             justify-content: center;
         }
-        .how-it-content-t img:hover{
+
+        .how-it-content-t img:hover {
             animation: yaobai 1s infinite;
         }
+
         @keyframes yaobai {
-            0%{transform:rotate(0deg);}
-            10%,50%{transform:rotate(30deg);}
-            20%,60%{transform:rotate(0deg);}
-            30%,70%{transform:rotate(-30deg);}
-            40%,80%{transform:rotate(0deg);}
-            100%{transform:rotate(0deg);}
+            0% {
+                transform: rotate(0deg);
+            }
+            10%, 50% {
+                transform: rotate(30deg);
+            }
+            20%, 60% {
+                transform: rotate(0deg);
+            }
+            30%, 70% {
+                transform: rotate(-30deg);
+            }
+            40%, 80% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
         }
-        .how-it-content-b p{
+
+        .how-it-content-b p {
             text-align: center;
         }
-        .how-it-content-b .p1{
+
+        .how-it-content-b .p1 {
             font-size: 20px;
             font-family: MicrosoftYaHei;
             margin-top: 31px;
         }
-        .how-it-content-b .p2{
+
+        .how-it-content-b .p2 {
             font-size: 14px;
             color: #666666;
         }
-        .how-it-content-b .onep{
+
+        .how-it-content-b .onep {
             margin-top: 28px;
         }
-        .apply-now{
+
+        .apply-now {
             margin: 108px auto 0px;
             background-image: url("../../img/oldgirl.png");
             background-repeat: no-repeat;
             height: 355px;
             position: relative;
         }
-        .apply-now a{
+
+        .apply-now a {
             position: absolute;
             top: 131px;
             left: 1037px;
@@ -512,7 +557,7 @@
             <div class="our-school-bottom-t">
                 <img src="../../img/16.png" alt="" width="100%" style="height: 460px">
             </div>
-            <div  class="our-school-bottom-b">
+            <div class="our-school-bottom-b">
                 <span>Kindergarten</span>
             </div>
         </div>
@@ -520,7 +565,7 @@
             <div class="our-school-bottom-t">
                 <img src="../../img/17.png" alt="" width="100%" style="height: 460px">
             </div>
-            <div  class="our-school-bottom-b">
+            <div class="our-school-bottom-b">
                 <span>Language schools</span>
             </div>
         </div>
@@ -528,7 +573,7 @@
             <div class="our-school-bottom-t">
                 <img src="../../img/18.png" alt="" width="100%" style="height: 460px">
             </div>
-            <div  class="our-school-bottom-b">
+            <div class="our-school-bottom-b">
                 <span>Public/International schools</span>
             </div>
         </div>
@@ -536,7 +581,7 @@
             <div class="our-school-bottom-t">
                 <img src="../../img/19.png" alt="" width="100%" style="height: 460px">
             </div>
-            <div  class="our-school-bottom-b">
+            <div class="our-school-bottom-b">
                 <span>University/Colleges</span>
             </div>
         </div>
@@ -620,7 +665,7 @@
     var isLoad = true; // 控制变量
 
     // 判断图片加载状况，加载完成后回调
-    isImgLoad(function(){
+    isImgLoad(function () {
         // 加载完成
         //引入顶部菜单
         $('header').load('../layout/header.html');
@@ -638,30 +683,31 @@
                 clickable: true,
             }
         });
+        $('body').show();
     });
 
     // 判断图片加载的函数
-    function isImgLoad(callback){
+    function isImgLoad(callback) {
         // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
         // 查找所有封面图，迭代处理
-        $('img').each(function(){
+        $('img').each(function () {
             // 找到为0就将isLoad设为false，并退出each
-            if(this.height === 0){
+            if (this.height === 0) {
                 isLoad = false;
                 return false;
             }
         });
         // 为true，没有发现为0的。加载完毕
-        if(isLoad){
+        if (isLoad) {
             clearTimeout(t_img); // 清除定时器
             // 回调函数
             callback();
             // 为false，因为找到了没有加载完成的图，将调用定时器递归
-        }else{
+        } else {
             isLoad = true;
-            t_img = setTimeout(function(){
+            t_img = setTimeout(function () {
                 isImgLoad(callback); // 递归扫描
-            },500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
         }
     }
 </script>
