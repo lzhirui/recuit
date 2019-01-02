@@ -1,0 +1,162 @@
+<script src="https://cdn.bootcss.com/handlebars.js/4.0.12/handlebars.min.js"></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 92, 199, 0.3);
+    }
+
+    .header-content {
+        width: 1350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rightLink {
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rightLink a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .select {
+        position: relative;
+    }
+    .top16{
+        top: -16px;
+    }
+    ul{
+        list-style: none;
+    }
+    .select ul{
+        margin-left: 32px;
+        margin-top: 20px;
+    }
+    .select ul li{
+        margin-top: 16px;
+    }
+
+    .select .ABOARDSelect a{
+        color: #6d6d6d;
+    }
+
+    .select .ABOARDSelect a:active {
+        color:#005cc7;
+    }
+
+    .select .ABOARDSelect a:hover {
+        color:#005cc7;
+    }
+
+    .ABOARD{
+        display: flex;
+        align-items: center;
+    }
+
+    .dImg{
+        width: 20px;
+        transform:rotate(180deg);
+    }
+
+    .sImg{
+        width: 30px;
+        transform:rotate(0deg) !important;
+    }
+
+    .ABOARDSelect {
+        display: none;
+        width: 399px;
+        height: 433px;
+        background-color: #ffffff;
+        border-radius: 0px 0px 10px 10px;
+        opacity: 0.8;
+        position: absolute;
+    }
+
+    .selectClass{
+        width: 399px;
+        height: 89px;
+        background: #fff;
+        line-height: 89px;
+        display: flex;
+        color: #005cc7 !important;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<div class="header">
+    <div class="header-content">
+        <div class="leftImg">
+            <img src="../../img/logo.png" alt="logo" style="height: 88px;width: 95px">
+        </div>
+        <div class="rightLink">
+            <a href="#">jobs</a>
+            <div class="select">
+                <a class="ABOARD">TEACHING JOBS ABOARD <img class="dImg" src="../../img/d.png" alt=""></a>
+                <div class="ABOARDSelect">
+                    <ul>
+                        <li>学校类型</li>
+                        <li><a href="#">Kindergarten</a></li>
+                        <li><a href="#">Primary/High schools</a></li>
+                        <li><a href="#">University/Colleges</a></li>
+                        <li><a href="#">English Language Institutes</a></li>
+                    </ul>
+                    <ul style="margin-top: 30px">
+                        <li>职位类型</li>
+                        <li><a href="#">English Teacher</a></li>
+                        <li><a href="#">Subject Teacher</a></li>
+                        <li><a href="#">Director of studies</a></li>
+                        <li><a href="#">Foreign Principal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="select">
+                <a class="ABOARD"><span>RESOURCES</span> <img class="dImg" src="../../img/d.png" alt=""></a>
+                <div class="ABOARDSelect">
+                    <ul>
+                        <li><a href="#">签证信息</a></li>
+                        <li><a href="#">国人平均薪资对比</a></li>
+                        <li><a href="#">面试技巧</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#">机构合作</a>
+            <a href="#">申请</a>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.ABOARD').on('click', function () {
+            $('.select').removeClass('top16');
+            $('.select .ABOARD').removeClass('selectClass');
+            $('.dImg').removeClass('sImg');
+            $('.dImg').attr('src','../../img/d.png');
+            $('.ABOARDSelect').hide();
+            $(this).next().show();
+            $(this).addClass('selectClass');    //给自己添加一个class样式
+            $(this).find('img').attr('src','../../img/s.png').addClass('sImg');
+            console.log($(this).parent())
+            $(this).parent().addClass('top16');
+        })
+    })
+</script>
