@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor:pointer;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 92, 199, 0.3);
+}
+.leftImg{
+    width: 10%;
+}
+.header-content {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content{
+    min-width: 768px;
+}
+
+.rightLink{
+    width:80%;
+}
+
+.mymenu{
+    display: none;
+}
+
+.rightLink .isshow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.rightLink div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.select {
+    position: relative;
+}
+
+.top16 {
+    top: -16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.select ul {
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.select ul li {
+    margin-top: 16px;
+}
+
+.select .ABOARDSelect a {
+    color: #6d6d6d;
+}
+
+.select .ABOARDSelect a:active {
+    color: #005cc7;
+}
+
+.select .ABOARDSelect a:hover {
+    color: #005cc7;
+}
+
+.ABOARD {
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.dImg {
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.sImg {
+    width: 30px;
+    transform: rotate(0deg) !important;
+}
+
+.rightLink div .ABOARDSelect {
+    display: none;
+    width: 399px;
+    height: 409px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.selectClass {
+    width: 399px;
+    height: 89px;
+    background: #fff;
+    line-height: 89px;
+    display: flex;
+    color: #005cc7 !important;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.zhiwei{
+    margin-top: 30px;
+}

@@ -1,0 +1,327 @@
+
+.swiper-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    display: none;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.bottom-nav {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    z-index: 10;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: inline-block;
+    height: 29px;
+    vertical-align: middle;
+}
+
+#ups-banner {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#ups-banner .swiper-pagination-bullet {
+    width: 33px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.56);
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#ups-banner .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.FEATURED-JOBS {
+    margin-top: 100px;
+}
+
+.imgjobsl {
+    display: flex;
+    justify-content: center;
+}
+
+.jobs-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 74%;
+    margin: 50px auto;
+}
+
+.jobs-content dl {
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #f8f8f8;
+    transition: all 0.6s;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.jobs-title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #181818;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.jobs-text {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #959595;
+    margin-top: 6px;
+    padding: 0 31px;
+}
+
+.jobs-link {
+    margin: 10px auto 10px;
+}
+
+.jobs-link a {
+    color: #005cc7;
+}
+
+.select-all {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.type-jobs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../img/yige.png");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-size: 100%;
+}
+
+.type-constraint {
+    width: 74%;
+    margin: 6% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.type-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 24.5%;
+    overflow: hidden;
+}
+
+.type-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 105px;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.6s;
+}
+
+
+@keyframes type-bottom {
+    from {
+        top: 105px;
+        background: rgba(0, 0, 0, 0);
+    }
+    to {
+        top: 0px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.type-title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 38%;
+}
+
+.type-text {
+    font-family: MicrosoftYaHei;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 35px;
+    padding: 0 47px;
+}
+
+.our-school {
+    width: 74%;
+    margin: 50px auto 0;
+}
+
+.our-school-top {
+    display: flex;
+    justify-content: center;
+}
+
+.our-school-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.our-school-bottom-content {
+    margin-top: 49px;
+    width: 46%;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+.our-school-bottom-b {
+    position: absolute;
+    top: 40%;
+    height: 20%;
+    left: 0;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    line-height: 112px;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Locations-english {
+    margin: 50px auto 0px;
+}
+
+.Locations-english div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Locations-english-b {
+    margin-top: 72px;
+}
+
+.how-it {
+    margin: 50px auto 0px;
+    width: 74%;
+}
+
+.how-it-t {
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-b {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.how-it-b .how-it-content {
+    margin: 1%;
+}
+
+.how-it-content-t {
+    display: flex;
+    justify-content: center;
+}
+
+
+.how-it-content-b p {
+    text-align: center;
+}
+
+.how-it-content-b .p1 {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    margin-top: 31px;
+}
+
+.how-it-content-b .p2 {
+    font-size: 14px;
+    color: #666666;
+}
+
+.how-it-content-b .onep {
+    margin-top: 28px;
+}
+
+.apply-now {
+    margin: 50px auto 0px;
+    background-image: url("../img/oldgirl.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.apply-now a {
+    position: absolute;
+    top: 131px;
+    left: 1037px;
+    display: block;
+    width: 377px;
+    height: 94px;
+    background-image: linear-gradient(90deg,
+    #005cc7 0%,
+    #459bd7 100%),
+    linear-gradient(
+            #005cc7,
+            #005cc7);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 18px;
+    font-size: 41px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 94px;
+}

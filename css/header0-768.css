@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 92, 199, 0.3);
+    height: 50px;
+}
+.leftImg{
+    width: 16%;
+}
+.header-content {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightLink{
+    width: 7%;
+}
+
+.rightLink .isshow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+
+.rightLink div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.select {
+    position: relative;
+}
+
+.top16 {
+    top: -16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.select ul {
+    margin-left: 10px;
+}
+
+.select ul li {
+    color: #eee;
+}
+
+.select .ABOARDSelect a {
+    color: #eee;
+    margin-left: 10px;
+}
+
+.select .ABOARDSelect a:active {
+    color: #005cc7;
+}
+
+
+.ABOARD {
+    display: flex;
+    align-items: center;
+}
+
+.dImg {
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.sImg {
+    width: 30px;
+    transform: rotate(0deg) !important;
+}
+
+.rightLink div .ABOARDSelect {
+}
+
+.rightLink a{
+    display: block;
+    width: 100%;
+}
+
+.selectClass {
+    width: 399px;
+    height: 89px;
+    background: #fff;
+    line-height: 89px;
+    display: flex;
+    color: #005cc7 !important;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.isshow{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(0, 92, 199, 0.3);
+    z-index: 222;
+    padding: 10px;
+    opacity: 0;
+    animation: phonemenu 1s forwards;
+    overflow: hidden;
+}
+.isshow >*{
+    margin-top: 10px;
+}
+.isshow ul{
+    margin-top: 6px;
+}
+
+.isshow ul li{
+    margin-top: 3px;
+}
+
+@keyframes phonemenu {
+    0%{
+        opacity: 1;
+        border-bottom-left-radius: 400px;
+        border-bottom-right-radius: 400px;
+        height: 0;
+    }
+    90%{
+        height: 800px;
+        opacity: 1;
+        border-bottom-left-radius: 300px;
+        border-bottom-right-radius: 300px;
+    }
+    100%{
+        opacity: 1;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 800px;
+    }
+}
+
+.zhiwei{
+    margin-top: 0px;
+}
+
+.header-animention-1{opacity:0;animation: textanimation .3s .1s forwards}
+.header-animention-2{opacity:0;animation: textanimation .35s .15s forwards}
+.header-animention-3{opacity:0;animation: textanimation .4s .2s forwards}
+.header-animention-4{opacity:0;animation: textanimation .45s .25s forwards}
+.header-animention-5{opacity:0;animation: textanimation .5s .3s forwards}
+.header-animention-6{opacity:0;animation: textanimation .55s .35s forwards}
+.header-animention-7{opacity:0;animation: textanimation .6s .4s forwards}
+.header-animention-8{opacity:0;animation: textanimation .65s .45s forwards}
+.header-animention-9{opacity:0;animation: textanimation .7s .5s forwards}
+.header-animention-10{opacity:0;animation: textanimation .75s .55s forwards}
+.header-animention-11{opacity:0;animation: textanimation .8s .6s forwards}
+.header-animention-12{opacity:0;animation: textanimation .85s .65s forwards}
+.header-animention-13{opacity:0;animation: textanimation .9s .7s forwards}
+.header-animention-14{opacity:0;animation: textanimation .95s .75s forwards}
+.header-animention-15{opacity:0;animation: textanimation 1s .8s forwards}
+.header-animention-16{opacity:0;animation: textanimation 1.05s .85s forwards}
+.header-animention-17{opacity:0;animation: textanimation 1.1s .9s forwards}
+.header-animention-18{opacity:0;animation: textanimation 1.15s .95s forwards}
+
+@keyframes textanimation {
+    0%{
+        opacity: 0;
+        margin-left: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 10px;
+    }
+}
