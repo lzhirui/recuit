@@ -6,25 +6,29 @@
     }
 
     .header {
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 92, 199, 0.3);
     }
-
+    .leftImg{
+        width: 10%;
+    }
     .header-content {
-        width: 1350px;
+        width: 74%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .header-content{
+        min-width: 768px;
+    }
 
     .rightLink {
-        width: 800px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 80%;
     }
 
     .rightLink a {
@@ -40,45 +44,49 @@
     .select {
         position: relative;
     }
-    .top16{
+
+    .top16 {
         top: -16px;
     }
-    ul{
+
+    ul {
         list-style: none;
     }
-    .select ul{
+
+    .select ul {
         margin-left: 32px;
         margin-top: 20px;
     }
-    .select ul li{
+
+    .select ul li {
         margin-top: 16px;
     }
 
-    .select .ABOARDSelect a{
+    .select .ABOARDSelect a {
         color: #6d6d6d;
     }
 
     .select .ABOARDSelect a:active {
-        color:#005cc7;
+        color: #005cc7;
     }
 
     .select .ABOARDSelect a:hover {
-        color:#005cc7;
+        color: #005cc7;
     }
 
-    .ABOARD{
+    .ABOARD {
         display: flex;
         align-items: center;
     }
 
-    .dImg{
+    .dImg {
         width: 20px;
-        transform:rotate(180deg);
+        transform: rotate(180deg);
     }
 
-    .sImg{
+    .sImg {
         width: 30px;
-        transform:rotate(0deg) !important;
+        transform: rotate(0deg) !important;
     }
 
     .ABOARDSelect {
@@ -91,7 +99,7 @@
         position: absolute;
     }
 
-    .selectClass{
+    .selectClass {
         width: 399px;
         height: 89px;
         background: #fff;
@@ -106,7 +114,7 @@
 <div class="header">
     <div class="header-content">
         <div class="leftImg">
-            <img src="../../img/logo.png" alt="logo" style="height: 88px;width: 95px">
+            <img src="../../img/logo.png" alt="logo" style="width: 60%;padding: 16px 0">
         </div>
         <div class="rightLink">
             <a href="#">jobs</a>
@@ -150,11 +158,11 @@
             $('.select').removeClass('top16');
             $('.select .ABOARD').removeClass('selectClass');
             $('.dImg').removeClass('sImg');
-            $('.dImg').attr('src','../../img/d.png');
+            $('.dImg').attr('src', '../../img/d.png');
             $('.ABOARDSelect').hide();
             $(this).next().show();
             $(this).addClass('selectClass');    //给自己添加一个class样式
-            $(this).find('img').attr('src','../../img/s.png').addClass('sImg');
+            $(this).find('img').attr('src', '../../img/s.png').addClass('sImg');
             console.log($(this).parent())
             $(this).parent().addClass('top16');
         })
