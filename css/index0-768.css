@@ -28,7 +28,6 @@ body {
 }
 
 #ups-banner {
-    max-height: 500px;
     overflow: hidden;
 }
 
@@ -51,8 +50,6 @@ body {
 }
 
 .imgjobsl {
-    display: flex;
-    justify-content: center;
 }
 
 .jobs-content {
@@ -75,7 +72,8 @@ body {
 }
 
 .jobs-title {
-    font-family: MicrosoftYaHei-Bold;
+    font-family:"微软雅黑";
+    font-weight:bold;
     font-size: 16px;
     letter-spacing: 0.6px;
     color: #181818;
@@ -84,7 +82,8 @@ body {
 }
 
 .jobs-text {
-    font-family: MicrosoftYaHei-Bold;
+    font-family:"微软雅黑";
+    font-weight:bold;
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
@@ -142,15 +141,21 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    top: 105px;
+    top: 44%;
     background: rgba(0, 0, 0, 0);
     transition: all 0.6s;
 }
 
+.type-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 @keyframes type-bottom {
     from {
-        top: 105px;
+        top: 20%;
         background: rgba(0, 0, 0, 0);
     }
     to {
@@ -160,22 +165,23 @@ body {
 }
 
 .type-title {
-    font-family: MicrosoftYaHei-Bold;
-    font-size: 22px;
-    line-height: 22px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 38%;
-}
-
-.type-text {
-    font-family: MicrosoftYaHei;
+    font-family:"微软雅黑";
+    font-weight:bold;
     font-size: 15px;
     line-height: 22px;
     color: #ffffff;
     text-align: center;
-    margin-top: 35px;
-    padding: 0 47px;
+    margin-top: 20%;
+}
+
+.type-text {
+    font-family:"微软雅黑";
+    font-size: 12px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
 }
 
 .our-school {
@@ -184,8 +190,6 @@ body {
 }
 
 .our-school-top {
-    display: flex;
-    justify-content: center;
 }
 
 .our-school-bottom {
@@ -196,9 +200,8 @@ body {
 }
 
 .our-school-bottom-content {
-    margin-top: 49px;
     width: 46%;
-    margin: 2%;
+    margin: 1%;
     overflow: hidden;
     position: relative;
     top: 0;
@@ -207,12 +210,19 @@ body {
     border-radius: 5px;
 }
 
+.our-school-bottom-t{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .our-school-bottom-b {
     position: absolute;
     top: 40%;
     height: 20%;
     left: 0;
-    font-family: MicrosoftYaHeiLight;
+    font-family:"微软雅黑";
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
@@ -222,7 +232,7 @@ body {
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
-    line-height: 112px;
+    line-height: 11px;
     transition: all 1s;
     display: flex;
     align-items: center;
@@ -233,7 +243,7 @@ body {
     margin: 50px auto 0px;
 }
 
-.Locations-english div {
+.Locations-english 。Locations-english-b {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +288,7 @@ body {
 
 .how-it-content-b .p1 {
     font-size: 20px;
-    font-family: MicrosoftYaHei;
+    font-family:"微软雅黑";
     margin-top: 31px;
 }
 
@@ -316,7 +326,7 @@ body {
     background-blend-mode: normal,
     normal;
     border-radius: 18px;
-    font-size: 41px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 22px;
@@ -324,4 +334,30 @@ body {
     color: #ffffff;
     text-align: center;
     line-height: 94px;
+}
+
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    width: 100%;
+}
+
+.color005{
+    margin-left: 20px;
+    color: #005cc7;
+}
+
+.linesOne{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.linesOne p{
+    background: #005cc7;
+    width: 35px;
+    height: 2px;
 }

@@ -1,6 +1,6 @@
 <script src="https://cdn.bootcss.com/handlebars.js/4.0.12/handlebars.min.js"></script>
-<link type="text/css" media="screen and (min-width: 768px)" href="../../css/header768.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/header0-768.css"/>
+<link type="text/css" media="screen and (min-width: 768px)" href="../../css/header768.css?2" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/header0-768.css?2"/>
 <div class="header">
     <div class="header-content">
         <div class="leftImg">
@@ -11,7 +11,7 @@
             <div class="isshow">
                 <a href="#" class="header-animention-1">jobs</a>
                 <div class="select">
-                    <a class="ABOARD header-animention-2">TEACHING JOBS ABOARD <img class="dImg" src="../../img/d.png" alt=""></a>
+                    <a class="ABOARD header-animention-2">TEACHING JOBS ABOARD <img class="dImg" src="../../img/d.png" alt=""><p class="phone">-</p></a>
                     <div class="ABOARDSelect">
                         <ul>
                             <li class="header-animention-3">学校类型</li>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="select">
-                    <a class="ABOARD header-animention-13"><span>RESOURCES</span> <img class="dImg" src="../../img/d.png" alt=""></a>
+                    <a class="ABOARD header-animention-13"><span>RESOURCES</span> <img class="dImg" src="../../img/d.png" alt=""><p class="phone">-</p></a>
                     <div class="ABOARDSelect">
                         <ul>
                             <li class="header-animention-14"><a href="#">签证信息</a></li>
@@ -48,25 +48,46 @@
 <script>
     $(function () {
         $('.ABOARD').click(function () {
-            $('.select').removeClass('top16');
-            $('.select .ABOARD').removeClass('selectClass');
-            $('.dImg').removeClass('sImg');
-            $('.dImg').attr('src', '../../img/d.png');
-            $('.ABOARDSelect').hide();
-            $(this).find('.ABOARD').next().show();
-            $(this).find('.ABOARD').addClass('selectClass');    //给自己添加一个class样式
-            $(this).find('.ABOARD').find('img').attr('src', '../../img/s.png').addClass('sImg');
-            $(this).addClass('top16');
+            if($(this).find('.phone').css('display') == 'none'){
+                $('.select').removeClass('top16');
+                $('.select .ABOARD').removeClass('selectClass');
+                $('.dImg').removeClass('sImg');
+                $('.dImg').attr('src', '../../img/d.png');
+                $('.ABOARDSelect').hide();
+                $(this).next().show();
+                $(this).addClass('selectClass');    //给自己添加一个class样式
+                $(this).find('img').attr('src', '../../img/s.png').addClass('sImg');
+                $(this).addClass('top16');
+            }else{
+                console.log($(this).find('.phone').html())
+                if($(this).find('.phone').html() == '-'){
+                    $(this).find('.phone').html('+');
+                    $(this).next('.ABOARDSelect').hide();
+                }else{
+                    $(this).find('.phone').html('-');
+                    $(this).next('.ABOARDSelect').addClass('kusushow').show();
+                }
+            }
         })
 
         var menushow = 0;
         $('.mymenu').on('click',function () {
+            //删掉因为屏幕切换导致的问题
+            $('.select').removeClass('top16');
+            $('.select .ABOARD').removeClass('selectClass');
+            $('.dImg').removeClass('sImg');
+            $('.dImg').attr('src', '../../img/d.png');
+            $('.ABOARDSelect').removeClass('kusushow');
             if(menushow == 0){
                 $('.isshow').show();
                 menushow = 1;
+                $(this).removeClass('remove_transform').addClass('add_transform')
+
             }else{
                 $('.isshow').hide();
                 menushow = 0;
+                $(this).removeClass('add_transform').addClass('remove_transform');
+                $('ABOARDSelect').removeClass('kusushow');
             }
         })
     })

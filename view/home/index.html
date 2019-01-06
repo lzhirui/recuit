@@ -6,11 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <!–[if lt IE 9]><script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script><![endif]–>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://cdn.bootcss.com/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/index0-768.css"/>
-    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/index768.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/index0-768.css?2"/>
+    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/index768.css?2" rel="stylesheet">
     <script src="https://cdn.bootcss.com/Swiper/4.4.6/js/swiper.min.js"></script>
 </head>
 <body>
@@ -49,7 +48,12 @@
 <!--"FEATURED JOBS"-->
 <div class="FEATURED-JOBS">
     <div class="imgjobsl">
-        <img src="../../img/jobsl.png" alt="" width="38%">
+        <div>
+            <p class="content-title"><span>FEATURED</span><span class="color005">JOBS</span></p>
+        </div>
+        <div class="linesOne">
+            <p></p>
+        </div>
     </div>
     <div class="jobs-content">
         <dl>
@@ -199,7 +203,12 @@
 <!--"OUR SCHOOL"-->
 <div class="our-school">
     <div class="our-school-top">
-        <img src="../../img/3.png" alt="" width="28%">
+        <div>
+            <p class="content-title"><span>OUR</span><span class="color005">SCHOOLS</span></p>
+        </div>
+        <div class="linesOne">
+            <p></p>
+        </div>
     </div>
     <div class="our-school-bottom">
         <div class="our-school-bottom-content">
@@ -240,7 +249,12 @@
 <!--Locations to Teach English-->
 <div class="Locations-english">
     <div class="Locations-english-t">
-        <img src="../../img/4.png" alt="" width="50%">
+        <div>
+            <p class="content-title"><span>Locations to Teach English</span><span class="color005">in China</span></p>
+        </div>
+        <div class="linesOne">
+            <p></p>
+        </div>
     </div>
     <div class="Locations-english-b">
         <img src="../../img/map.png" alt="" width="54%">
@@ -249,8 +263,13 @@
 
 <!--HOW IT-->
 <div class="how-it">
-    <div class="how-it-t">
-        <img src="../../img/5.png" alt="">
+    <div class="">
+        <div>
+            <p class="content-title"><span>HOW IT</span><span class="color005">WORKS</span></p>
+        </div>
+        <div class="linesOne">
+            <p></p>
+        </div>
     </div>
     <div class="how-it-b">
         <div class="how-it-content">
@@ -302,9 +321,7 @@
     </div>
 </div>
 
-<div class="apply-now">
-    <!--<a href="#">APPLY NOW</a>-->
-</div>
+
 
 <!--footer-->
 <footer></footer>
@@ -321,7 +338,7 @@
         $('footer').load('../layout/footer.html');
         //轮播
         var upsSwiper = new Swiper('.swiper-container', {
-            speed: 5000,
+            speed: 1000,
             longSwipes: true,
             loop: true,
             autoplay: {
@@ -333,6 +350,9 @@
             }
         });
         $('body').show();
+
+
+
     });
 
     // 判断图片加载的函数
