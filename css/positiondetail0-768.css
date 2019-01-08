@@ -1,0 +1,292 @@
+.p-top{
+    position: relative;
+}
+
+.p-topseach{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pd-top-lfet{
+    color: #000;
+}
+
+.pd-top-left-title{
+    font-family: MicrosoftYaHei;
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+}
+
+.pd-top-lfet-text-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+
+.pd-top-lfet-text-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.pd-top-left-text-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 44%;
+    margin-top: 2%;
+}
+
+.pd-top-left-text-content-lfet{
+    font-size: 12px;
+}
+
+.pd-top-left-text-content-right{
+    margin-left: 10px;
+}
+
+.pd-top-left-text-content-right-p1{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 14px;
+    color: #000;
+}
+
+.pd-top-left-text-content-right-p2{
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #000;
+}
+
+.pd-top-right{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+.pd-top-right a{
+    font-family: MicrosoftYaHei;
+    font-size: 17px;
+    color: #005cc7;
+    border-radius: 18px;
+    background: #ccc;
+    padding: 2% 7%;
+    width: 32%;
+
+}
+
+.p-qAr{
+    width: 94%;
+    margin: 30px auto 0px;
+}
+
+.p-qAr-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.p-qAr-title p{
+    width: 4px;
+    height: 20px;
+    background-color: #005cc7;
+    border-radius: 2px;
+}
+
+.p-qAr-title span{
+    font-family: MicrosoftYaHei;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.
+
+.p-qAr-content{
+
+}
+
+.p-qAr-text{
+    margin-top: 15px;
+}
+
+.p-qAr-text p{
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #181818;
+}
+.p-qAr-text div p{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.p-jAb{
+    width: 94%;
+    margin: 70px auto 0px;
+}
+.p-jAb-content{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+.p-jAb-content p{
+    margin-top: 5px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: inline-block;
+    height: 29px;
+    vertical-align: middle;
+}
+
+#ups-banner {
+    overflow: hidden;
+}
+
+#ups-banner .swiper-pagination-bullet {
+    width: 20px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.56);
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#ups-banner .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.center-lunbo{
+    background: #f2f5f9;
+    padding: 30px 0;
+    margin-top: 70px;
+}
+
+.center-content{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.center-content-lfet{
+    width: 100%;
+}
+
+.center-content-text{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.center-swiper{
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.center-swiper img{
+    height: 300px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("../img/pd-lunbo-right.png");
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("../img/pd-lunbo-right.png");
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.FEATURED-JOBS {
+    margin-top: 100px;
+}
+
+.imgjobsl {
+}
+
+.jobs-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 74%;
+    margin: 50px auto;
+}
+
+.jobs-content dl {
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #f8f8f8;
+    transition: all 0.6s;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.jobs-title {
+    font-family:"微软雅黑";
+    font-weight:bold;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #181818;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.jobs-text {
+    font-family:"微软雅黑";
+    font-weight:bold;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #959595;
+    margin-top: 6px;
+    padding: 0 31px;
+}
+
+.jobs-link {
+    margin: 10px auto 10px;
+}
+
+.jobs-link a {
+    color: #005cc7;
+}
+

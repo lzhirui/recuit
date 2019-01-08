@@ -1,0 +1,323 @@
+.p-top{
+    position: relative;
+}
+
+.p-topseach{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 768px;
+    margin-left: 12%;
+}
+
+.pd-top-lfet{
+    width: 77%;
+    color: #fff;
+}
+
+.pd-top-left-title{
+    font-family: MicrosoftYaHei;
+    font-size: 33px;
+    color: #ffffff;
+}
+
+.pd-top-lfet-text-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    flex-wrap: wrap;
+}
+
+.pd-top-lfet-text-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.pd-top-left-text-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    margin-top: 2%;
+}
+
+.pd-top-left-text-content-lfet{
+    font-size: 16px;
+}
+
+.pd-top-left-text-content-right{
+    margin-left: 10px;
+}
+
+.pd-top-left-text-content-right-p1{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.pd-top-left-text-content-right-p2{
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.pd-top-right{
+    width: 23%;
+}
+.pd-top-right a{
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    color: #005cc7;
+    border-radius: 18px;
+    background: #fff;
+    padding: 5% 11%;
+}
+
+.p-qAr{
+    width: 74%;
+    min-width: 768px;
+    margin: 170px auto 0px;
+}
+
+.p-qAr-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.p-qAr-title p{
+    width: 6px;
+    height: 26px;
+    background-color: #005cc7;
+    border-radius: 2px;
+}
+
+.p-qAr-title span{
+    font-family: MicrosoftYaHei;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+
+
+.p-qAr-content{
+
+}
+
+.p-qAr-text{
+    margin-top: 40px;
+}
+
+.p-qAr-text p{
+    font-family: MicrosoftYaHei;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #181818;
+}
+.p-qAr-text div p{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 19px;
+}
+
+.p-jAb{
+    width: 74%;
+    min-width: 768px;
+    margin: 170px auto 0px;
+}
+.p-jAb-content{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 41px;
+}
+
+.p-jAb-content p{
+    margin-top: 5px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: inline-block;
+    height: 29px;
+    vertical-align: middle;
+}
+
+#ups-banner {
+    overflow: hidden;
+}
+
+#ups-banner .swiper-pagination-bullet {
+    width: 20px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.56);
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#ups-banner .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.center-lunbo{
+    background: #f2f5f9;
+    padding: 90px 0;
+    margin-top: 170px;
+}
+
+.center-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 74%;
+    margin: 0 auto;
+}
+
+.center-content-lfet{
+    width: 56%;
+}
+
+.center-content-text{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 21px;
+    margin-top: 39px;
+}
+
+.center-swiper{
+    width: 38%;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-swiper img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("../img/pd-lunbo-right.png");
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("../img/pd-lunbo-right.png");
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.FEATURED-JOBS {
+    margin-top: 100px;
+}
+
+.imgjobsl {
+}
+
+.imgjobsl .p-qAr-title{
+    width: 74%;
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+.jobs-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 74%;
+    min-width: 768px;
+    margin: 50px auto;
+}
+
+.jobs-content dl {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #f8f8f8;
+    margin-top: 37px;
+    transition: all 0.6s;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.jobs-content dl:hover {
+    transform: scale(1.03);
+    margin-top: 20px;
+}
+
+.jobs-title {
+    font-family:"微软雅黑";
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: #181818;
+    margin-top: 51px;
+    text-align: center;
+}
+
+.jobs-text {
+    font-family:"微软雅黑";
+    font-weight:bold;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #959595;
+    margin-top: 28px;
+    padding: 0 31px;
+}
+
+.jobs-link {
+    margin: 46px 0 42px 31px;
+}
+
+.jobs-link a {
+    color: #005cc7;
+}
+
+
+.colorfffc00{
+    color: #fffc00;
+}
+

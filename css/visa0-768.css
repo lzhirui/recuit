@@ -1,0 +1,106 @@
+.v-content{
+    width: 94%;
+    margin: 70px auto 0;
+}
+
+
+.p-qAr{
+    width: 74%;
+    min-width: 768px;
+    margin: 170px auto 0px;
+}
+
+.p-qAr-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.p-qAr-title p{
+    width: 4px;
+    height: 16px;
+    background-color: #005cc7;
+    border-radius: 2px;
+}
+
+.p-qAr-title span{
+    font-family: MicrosoftYaHei;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.v-conttent-top{
+    margin-top: 40px;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 13px;
+    color: #323232;
+}
+
+.v-conttent-top-left{
+    width: 100%;
+}
+
+.v-conttent-top-right{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.v-conttent-top title{
+    color: #000000;
+}
+
+.margin-left-24{
+    padding-left: 20px;
+}
+
+
+.v-content-map{
+    margin-top: 60px;
+}
+
+.v-content-text{
+    margin-top: 20px;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 13px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.sctext-title{
+    margin-top: 15px;
+}
+
+.sctext-title-ziTitle{
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.colorRed{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ff0000;
+    margin-top: 29px;
+}
+
+.v-content-bottom{
+    font-family: TrajanColor-Concept;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #005cc7;
+    text-align: center;
+    margin-top: 30px;
+}

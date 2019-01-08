@@ -190,3 +190,51 @@
         margin-top: 20px;
     }
 }
+
+.pdl-top{
+    width: 94%;
+    margin: 30px auto 0;
+    font-family: MicrosoftYaHeiUILight;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #323232;
+}
+
+.pdl-top h3{
+    text-align: center;
+    font-family: MicrosoftYaHei;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.newlist{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.newlist a{
+    margin: 0 auto;
+    background-image: linear-gradient(90deg,
+    #005cc7 0%,
+    #459bd7 100%),
+    linear-gradient(
+            #005cc7,
+            #005cc7);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 30px;
+    border-radius: 30px;
+    font-family: MicrosoftYaHei;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 5px 10px;
+}

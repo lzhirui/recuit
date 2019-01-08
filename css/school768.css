@@ -1,0 +1,94 @@
+.sdl-top{
+    width: 74%;
+    min-width: 768px;
+    margin: 170px auto 0;
+}
+
+.sdl-one-div{
+
+}
+
+.sdl-one-div-text{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 20px;
+    color: #323232;
+    margin-top: 40px;
+}
+
+.sdl-one-div-text-one{
+    margin-top: 23px;
+}
+
+.sdl-one-div-text-two{
+    margin-top: 23px;
+}
+
+.sdl-one-div-text-three{
+    margin-top: 23px;
+}
+
+.sdl-two-div{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sdl-two-div-left{
+    width: 50%;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 20px;
+    color: #323232;
+}
+
+.sdl-top .p-qAr-title span{
+    font-size: 29px;
+}
+
+.sdl-two-div-left p{
+    margin-top: 10px;
+}
+
+.sdl-two-div-left-title{
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.sdl-two-div-right{
+    width: 45%;
+}
+
+.sdl-two-div-right-ke{
+
+}
+
+.sdl-three-div{
+    margin-top: 160px;
+}
+
+
+.sdl-three-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 19px;
+    color: #323232;
+}
+
+
+.sdl-three-text-left{
+    width: 47%;
+}
+
+
+.sdl-three-text-right{
+    width: 43%;
+}

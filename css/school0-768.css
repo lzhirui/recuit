@@ -1,0 +1,86 @@
+.sdl-top{
+    width: 94%;
+    margin: 60px auto 0;
+}
+
+.sdl-one-div{
+
+}
+
+.sdl-one-div-text{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    color: #323232;
+    margin-top: 20px;
+}
+
+.sdl-one-div-text-one{
+    margin-top: 15px;
+}
+
+.sdl-one-div-text-two{
+    margin-top: 15px;
+}
+
+.sdl-one-div-text-three{
+    margin-top: 15px;
+}
+
+.sdl-two-div{
+    margin-top: 50px;
+}
+
+.sdl-two-div-left{
+    width: 100%;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    color: #323232;
+}
+
+.sdl-top .p-qAr-title span{
+    font-size: 14px;
+}
+
+.sdl-two-div-left p{
+    margin-top: 10px;
+}
+
+.sdl-two-div-left-title{
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.sdl-two-div-right{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sdl-two-div-right-ke{
+
+}
+
+.sdl-three-div{
+    margin-top: 60px;
+}
+
+
+.sdl-three-text{
+    margin-top: 20px;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 12px;
+    color: #323232;
+}
+
+
+.sdl-three-text-left{
+    width: 100%;
+}
+
+
+.sdl-three-text-right{
+    width: 100%;
+    margin-top: 30px;
+}
