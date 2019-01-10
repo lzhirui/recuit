@@ -6,7 +6,6 @@
 
 .p-qAr{
     width: 74%;
-    min-width: 768px;
     margin: 170px auto 0px;
 }
 
@@ -103,4 +102,265 @@
     color: #005cc7;
     text-align: center;
     margin-top: 30px;
+}
+
+.v-content-map .title{
+    margin-top: 29px;
+}
+
+
+.v-content-map{
+    margin-top: 160px;
+}
+
+.v-content-text{
+    margin-top: 170px;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 18px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.sctext-title{
+    margin-top: 46px;
+}
+
+.sctext-title-ziTitle{
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 40px;
+}
+
+.colorRed{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ff0000;
+    margin-top: 29px;
+}
+
+.v-content-bottom{
+    font-family: TrajanColor-Concept;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #005cc7;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.v-content-map .title{
+    margin-top: 29px;
+}
+
+.v-content-map-neirong{
+    margin-top: 40px;
+}
+
+.v-content-map-neirong-text{
+    margin-top: 50px;
+}
+
+
+.v-content-map-neirong-text-left{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.v-content-map-neirong-text-left img{
+    width: 100%;
+}
+
+.v-content-map-neirong-text-right{
+    width: 85%;
+    padding: 0px 15px;
+    box-shadow: -1px 0px 10px 2px #ccc;
+    border-radius: 17px;
+    position: relative;
+    min-height: 200px;
+    margin-left: 4%;
+}
+
+.v-content-map-neirong-text-right div{
+    font-size: 12px;
+    color: #606060;
+}
+
+.mar-top-20{
+    margin-top: 20px;
+}
+
+.v-content-map-neirong-text .title{
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.v-xia{
+    display: flex;
+    justify-content: center;
+    margin: 21px 0;
+}
+
+.v-xia img{
+}
+
+
+.item{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    left: -60px;
+    top: 5%;
+    display: none;
+}
+.item div{
+    width: 38px;
+    top: 6px;
+    height: 48px;
+    background: #fff;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    color: #005cc7;
+    padding-left: 12px;
+    line-height: 50px;
+    box-shadow: 0px 0px 7px 3px #ccc;
+}
+
+.bian-left .item-right{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    right: -60px;
+    top: 5%;
+    display: none;
+}
+.bian-left .item-right div{
+    width: 38px;
+    top: 6px;
+    height: 48px;
+    background: #fff;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    font-size: 30px;
+    color: #005cc7;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 50px;
+    box-shadow: 0px 0px 7px 3px #ccc;
+}
+
+.bian-left .text{
+}
+
+.bian-left .text-left{
+
+}
+
+.bian-left .text-left img{
+    padding-bottom: 10px;
+}
+
+.bian-left .text-down{
+    text-align: center;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 20px;
+    color: #005cc7;
+    cursor:pointer;
+}
+.text-right{
+
+}
+
+.one-p{
+    display: flex;
+    align-items: center;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(229,229,229,0.9);
+}
+
+.caozuo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.download{
+    background-image: url("../img/d2.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+.download:hover{
+    background-image: url("../img/d1.png");
+}
+
+.cloes{
+    background-image: url("../img/g2.png");
+    background-size: 43px 43px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.cloes:hover{
+    background-image: url("../img/g1.png");
+}
+
+#ups-banner {
+    overflow: hidden;
+}
+
+#ups-banner .swiper-pagination-bullet {
+    width: 20px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.56);
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#ups-banner .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.v-lunbo{
+    margin-top: 40px;
+}
+
+.img-inner{
+    display: flex;
+    justify-content: center;
 }

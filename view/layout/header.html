@@ -1,7 +1,59 @@
 <script src="https://cdn.bootcss.com/handlebars.js/4.0.12/handlebars.min.js"></script>
-<link type="text/css" media="screen and (min-width: 768px)" href="../../css/header768.css?3" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/header0-768.css?3"/>
-<div class="header">
+<link type="text/css" media="screen and (min-width: 768px)" href="../../css/header768.css?4" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)"
+      href="../../css/header0-768.css?4"/>
+<div class="header  pc-display">
+    <div class="header-content">
+        <div class="leftImg">
+            <img src="../../img/logo.png" alt="logo" style="width: 60%;padding: 16px 0">
+        </div>
+        <div class="rightLink">
+            <img src="../../img/menu.png" alt="" class="mymenu" width="100%"/>
+            <div class="isshow">
+                <a href="#" class="header-animention-1 ABOARD">jobs</a>
+                <div class="select">
+                    <div class="ABOARD header-animention-2">
+                        <span>TEACHING JOBS ABOARD </span>
+                        <img class="dImg" src="../../img/d.png" alt="">
+                        <div class="ABOARDSelect">
+                            <ul>
+                                <li class="header-animention-3">学校类型</li>
+                                <li class="header-animention-4"><a href="#">Kindergarten</a></li>
+                                <li class="header-animention-5"><a href="#">Primary/High schools</a></li>
+                                <li class="header-animention-6"><a href="#">University/Colleges</a></li>
+                                <li class="header-animention-7"><a href="#">English Language Institutes</a></li>
+                            </ul>
+                            <ul class="zhiwei">
+                                <li class="header-animention-8">职位类型</li>
+                                <li class="header-animention-9"><a href="#">English Teacher</a></li>
+                                <li class="header-animention-10"><a href="#">Subject Teacher</a></li>
+                                <li class="header-animention-11"><a href="#">Director of studies</a></li>
+                                <li class="header-animention-12"><a href="#">Foreign Principal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="ABOARD header-animention-13">
+                        <span>RESOURCES</span>
+                        <img class="dImg" src="../../img/d.png" alt="">
+                        <div class="ABOARDSelect">
+                            <ul>
+                                <li class="header-animention-14"><a href="#">签证信息</a></li>
+                                <li class="header-animention-15"><a href="#">国人平均薪资对比</a></li>
+                                <li class="header-animention-16"><a href="#">面试技巧</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="header-animention-17 ABOARD">机构合作</a>
+                <a href="#" class="header-animention-18 ABOARD">申请</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header phone-display">
     <div class="header-content">
         <div class="leftImg">
             <img src="../../img/logo.png" alt="logo" style="width: 60%;padding: 16px 0">
@@ -11,7 +63,7 @@
             <div class="isshow">
                 <a href="#" class="header-animention-1">jobs</a>
                 <div class="select">
-                    <a class="ABOARD header-animention-2"><span>TEACHING JOBS ABOARD </span><img class="dImg" src="../../img/d.png" alt=""><span class="phone">-</span></a>
+                    <a class="ABOARD header-animention-2"><span>TEACHING JOBS ABOARD </span><span class="phone">-</span></a>
                     <div class="ABOARDSelect">
                         <ul>
                             <li class="header-animention-3">学校类型</li>
@@ -30,7 +82,7 @@
                     </div>
                 </div>
                 <div class="select">
-                    <a class="ABOARD header-animention-13"><span>RESOURCES</span> <img class="dImg" src="../../img/d.png" alt=""><span class="phone">-</span></a>
+                    <a class="ABOARD header-animention-13"><span>RESOURCES</span><span class="phone">-</span></a>
                     <div class="ABOARDSelect">
                         <ul>
                             <li class="header-animention-14"><a href="#">签证信息</a></li>
@@ -47,43 +99,25 @@
 </div>
 <script>
     $(function () {
-        $('.ABOARD').click(function () {
-            if($(this).find('.phone').css('display') == 'none'){
-                $('.select').removeClass('top16');
-                $('.select .ABOARD').removeClass('selectClass');
-                $('.dImg').removeClass('sImg');
-                $('.dImg').attr('src', '../../img/d.png');
-                $('.ABOARDSelect').hide();
-                $(this).next().show();
-                $(this).addClass('selectClass');    //给自己添加一个class样式
-                $(this).find('img').attr('src', '../../img/s.png').addClass('sImg');
-                $(this).addClass('top16');
-            }else{
-                if($(this).find('.phone').html() == '-'){
-                    $(this).find('.phone').html('+');
-                    $(this).next('.ABOARDSelect').hide();
-                }else{
-                    $(this).find('.phone').html('-');
-                    $(this).next('.ABOARDSelect').addClass('kusushow').show();
-                }
+        $('.phone-display .ABOARD').on('click', function () {
+            if ($(this).find('.phone').html() == '-') {
+                $(this).find('.phone').html('+');
+                $(this).next('.ABOARDSelect').hide();
+            } else {
+                $(this).find('.phone').html('-');
+                $(this).next('.ABOARDSelect').addClass('kusushow').show();
             }
         })
 
         var menushow = 0;
-        $('.mymenu').on('click',function () {
-            //删掉因为屏幕切换导致的问题
-            $('.select').removeClass('top16');
-            $('.select .ABOARD').removeClass('selectClass');
-            $('.dImg').removeClass('sImg');
-            $('.dImg').attr('src', '../../img/d.png');
-            $('.ABOARDSelect').removeClass('kusushow');
-            if(menushow == 0){
-                $('.isshow').show();
+        $('.phone-display .mymenu').on('click', function () {
+            if (menushow == 0) {
+                $('.phone-display .isshow').show();
                 menushow = 1;
                 $(this).removeClass('remove_transform').addClass('add_transform')
 
-            }else{
-                $('.isshow').hide();
+            } else {
+                $('.phone-display .isshow').hide();
                 menushow = 0;
                 $(this).removeClass('add_transform').addClass('remove_transform');
                 $('ABOARDSelect').removeClass('kusushow');

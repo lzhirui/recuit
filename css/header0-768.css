@@ -234,3 +234,12 @@ ul {
     display: block;
     margin-left: 10px;
 }
+
+
+.pc-display{
+    display: none;
+}
+
+.phone-display{
+    display: flex;
+}

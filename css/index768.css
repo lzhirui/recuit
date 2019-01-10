@@ -55,7 +55,7 @@ body {
 .jobs-content {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     width: 74%;
     min-width: 768px;
@@ -66,7 +66,7 @@ body {
     width: 30%;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 2px 2px #f8f8f8;
+    box-shadow: 0px 0px 8px 3px #f8f8f8;
     margin-top: 37px;
     transition: all 0.6s;
     overflow: hidden;
@@ -75,7 +75,7 @@ body {
 
 .jobs-content dl:hover {
     transform: scale(1.03);
-    margin-top: 20px;
+    box-shadow: 0px 0px 8px 8px #f8f8f8;
 }
 
 .jobs-title {
@@ -91,18 +91,18 @@ body {
 .jobs-text {
     font-family:"微软雅黑";
     font-weight:bold;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 22px;
     letter-spacing: 0.5px;
     color: #959595;
-    margin-top: 28px;
-    padding: 0 31px;
+    margin-top: 18px;
+    padding: 0 15px;
 }
 
 .jobs-link {
-    margin: 46px 0 42px 31px;
+    margin: 24px 0 30px 17px;
 }
 
 .jobs-link a {
@@ -122,13 +122,14 @@ body {
     background-image: url("../img/yige.png");
     background-repeat: no-repeat;
     margin-top: 174px;
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 .type-constraint {
     width: 74%;
     min-width: 768px;
-    margin: 6% auto;
+    margin: 12% auto 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,21 +172,21 @@ body {
 .type-title {
     font-family:"微软雅黑";
     font-weight:bold;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 18px;
     color: #ffffff;
     text-align: center;
-    margin-top: 38%;
+    margin-top: 60%;
 }
 
 .type-text {
-    font-family:"微软雅黑";
+    font-family: "微软雅黑";
     font-size: 15px;
     line-height: 22px;
     color: #ffffff;
     text-align: center;
-    margin-top: 35px;
-    padding: 0 47px;
+    margin-top: 5%;
+    padding: 0 10px;
 }
 
 .our-school {
@@ -202,12 +203,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .our-school-bottom-content {
     margin-top: 49px;
-    width: 46%;
-    margin: 2%;
+    width: 48%;
+    margin: 0.5% 0.8%;
     overflow: hidden;
     position: relative;
     top: 0;
@@ -260,7 +262,7 @@ body {
 
 .how-it {
     margin: 213px auto 0px;
-    width: 74%;
+    width: 100%;
     min-width: 768px;
 }
 
@@ -278,11 +280,13 @@ body {
 
 .how-it-b .how-it-content {
     margin: 1%;
+    width: 17%;
 }
 
 .how-it-content-t {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .how-it-content-t img:hover {
@@ -321,7 +325,7 @@ body {
 }
 
 .how-it-content-b .p2 {
-    font-size: 14px;
+    font-size: 12px;
     color: #666666;
 }
 
@@ -334,7 +338,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    top: 44%;
+    top: 20%;
     background: rgba(0, 0, 0, 0);
     transition: all 0.6s;
 }
@@ -353,6 +357,7 @@ body {
     align-items: center;
     font-size: 36px;
     width: 100%;
+    font-weight: bold;
 }
 
 .color005{

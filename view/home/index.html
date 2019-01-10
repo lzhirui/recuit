@@ -8,13 +8,13 @@
     <title>首页</title>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://cdn.bootcss.com/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/index0-768.css?2"/>
-    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/index768.css?2" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="../../css/index0-768.css?3"/>
+    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/index768.css?3" rel="stylesheet">
     <script src="https://cdn.bootcss.com/Swiper/4.4.6/js/swiper.min.js"></script>
 </head>
 <body>
 <!--头部-->
-<header style="position: absolute;top: 0;width: 100%;left: 0;z-index: 100"></header>
+<header style="position: fixed;top: 0;width: 100%;left: 0;z-index: 100"></header>
 
 <!--轮播-->
 <div id="ups-banner">
@@ -45,6 +45,7 @@
     </div>
 </div>
 
+
 <!--"FEATURED JOBS"-->
 <div class="FEATURED-JOBS">
     <div class="imgjobsl">
@@ -63,7 +64,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -78,7 +79,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -93,7 +94,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -108,7 +109,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -123,7 +124,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -138,7 +139,7 @@
             </dt>
             <dd>
                 <p class="jobs-title">Kindergarten English Teaching</p>
-                <p class="jobs-text">Shanghai Dison Private KindergartenShanghai
+                <p class="jobs-text">Shanghai Dison Private Kinderg arten Shanghai
                     Dison Private KindergartenDison Private Kinder
                     gartenPrivate Kindergarten...</p>
                 <div class="jobs-link">
@@ -274,7 +275,7 @@
     <div class="how-it-b">
         <div class="how-it-content">
             <div class="how-it-content-t">
-                <img src="../../img/one.png" alt="" width="100px">
+                <img src="../../img/one.png" alt="" width="70px">
             </div>
             <div class="how-it-content-b">
                 <p class="p1">1. Apply</p>
@@ -285,7 +286,7 @@
         </div>
         <div class="how-it-content">
             <div class="how-it-content-t">
-                <img src="../../img/two.png" alt="" width="100px">
+                <img src="../../img/two.png" alt="" width="70px">
             </div>
             <div class="how-it-content-b">
                 <p class="p1">2. lnterview</p>
@@ -297,7 +298,7 @@
         </div>
         <div class="how-it-content">
             <div class="how-it-content-t">
-                <img src="../../img/three.png" alt="" width="100px">
+                <img src="../../img/three.png" alt="" width="70px">
             </div>
             <div class="how-it-content-b">
                 <p class="p1">3. Start Work</p>
@@ -308,7 +309,7 @@
         </div>
         <div class="how-it-content">
             <div class="how-it-content-t">
-                <img src="../../img/four.png" alt="" width="100px">
+                <img src="../../img/four.png" alt="" width="70px">
             </div>
             <div class="how-it-content-b">
                 <p class="p1">4. Free Service</p>
@@ -330,18 +331,17 @@
     var t_img; // 定时器
     var isLoad = true; // 控制变量
 
-    // 判断图片加载状况，加载完成后回调
-    isImgLoad(function () {
+    $(function () {
         // 加载完成
         //引入顶部菜单
         $('header').load('../layout/header.html');
         $('footer').load('../layout/footer.html');
         //轮播
         var upsSwiper = new Swiper('.swiper-container', {
-            speed: 1000,
             longSwipes: true,
             loop: true,
             autoplay: {
+                delay: 4000,
                 disableOnInteraction: true,
             },
             pagination: {
@@ -349,10 +349,11 @@
                 clickable: true,
             }
         });
+    })
+
+    // 判断图片加载状况，加载完成后回调
+    isImgLoad(function () {
         $('body').show();
-
-
-
     });
 
     // 判断图片加载的函数

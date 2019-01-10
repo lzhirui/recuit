@@ -5,6 +5,8 @@
 a{
     cursor:pointer;
 }
+
+
 .header {
     display: flex;
     justify-content: center;
@@ -87,6 +89,9 @@ ul {
     align-items: center;
     cursor:pointer;
 }
+.ABOARD span{
+    color: #fff;
+}
 
 .dImg {
     width: 20px;
@@ -101,23 +106,42 @@ ul {
 .rightLink div .ABOARDSelect {
     display: none;
     width: 399px;
-    height: 409px;
+    min-height: 209px;
     background-color: #ffffff;
     border-radius: 0px 0px 10px 10px;
-    opacity: 0.8;
+    opacity: 0;
     position: absolute;
+    font-size: 16px;
 }
 
-.selectClass {
-    width: 399px;
-    height: 89px;
+.ABOARD:hover {
+    padding: 0 20px;
+    height: 100%;
     background: #fff;
-    line-height: 89px;
+    line-height: 77px;
     display: flex;
     color: #005cc7 !important;
     font-size: 22px;
     align-items: center;
     justify-content: center;
+}
+
+.ABOARD:hover span{
+    color: #005cc7 !important;
+}
+
+.rightLink div div.ABOARD:hover .ABOARDSelect{
+    display: block;
+    top: 100%;
+    width: 100%;
+    z-index: 22222222;
+    line-height: 20px;
+    opacity: 0.8;
+}
+
+.ABOARD:hover img.dImg{
+    transform: rotate(0deg);
+    content: url("../img/s.png");
 }
 
 
@@ -131,5 +155,13 @@ ul {
 
 
 .phone{
+    display: none;
+}
+
+.pc-display{
+    display: flex;
+}
+
+.phone-display{
     display: none;
 }
