@@ -116,20 +116,18 @@ body {
 }
 
 .type-jobs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("../img/yige.png");
+    background-image: url("../img/yige.png?1");
     background-repeat: no-repeat;
     margin-top: 174px;
-    background-size: 100% 100%;
+    background-size: 1900px 100%;
     background-position: center;
 }
 
 .type-constraint {
     width: 74%;
     min-width: 768px;
-    margin: 12% auto 7%;
+    padding: 5% 0%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,4 +373,8 @@ body {
     background: #005cc7;
     width: 55px;
     height: 4px;
+}
+
+.type-jobs-top{
+    padding-top: 46px;
 }
