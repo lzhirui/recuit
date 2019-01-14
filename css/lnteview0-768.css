@@ -1,0 +1,57 @@
+.top-img{
+    width: 100%;
+}
+@font-face {
+    font-family: "Stencil";
+    src: url(../font/Stencil.ttf) format("truetype");
+}
+
+
+.top-img img{
+    width: 100%;
+}
+
+.top-img .text{
+    font-family: Stencil;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    color: #000;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.top-img .text p{
+}
+
+.box{
+    width: 94%;
+    margin: 50px auto 0;
+}
+
+.datitle{
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #000000;
+}
+
+.xiaobiaoti{
+    margin-top: 50px;
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    color: #000000;
+}
+
+.neirong{
+    margin-top: 23px;
+    font-family: MicrosoftYaHeiUILight;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #323232;
+}

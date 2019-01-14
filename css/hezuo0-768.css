@@ -1,0 +1,136 @@
+.top-img{
+    width: 100%;
+}
+
+* + p, * + hr, * + ul, * + ol, * + dl, * + blockquote, * + pre, * + address, * + fieldset, * + figure {
+    margin-top: 0rem;
+}
+
+p, hr, ul, ol, dl, blockquote, pre, address, fieldset, figure {
+    margin: 0 0 0rem 0;
+}
+
+
+@font-face {
+    font-family: "Stencil";
+    src: url(../font/Stencil.ttf) format("truetype");
+}
+
+
+.top-img img{
+    width: 100%;
+}
+
+.top-img .text{
+    font-family: Stencil;
+    font-size: 27px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    color: #000;
+    text-align: center;
+}
+
+.top-img .text p{
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.color005{
+    margin-left: 20px;
+    font-size: 36px;
+    color: #005cc7;
+}
+
+.linesOne{
+    display: flex;
+    justify-content: center;
+}
+
+.linesOne p{
+    background: #005cc7;
+    width: 55px;
+    height: 4px;
+}
+
+.form{
+    margin-top: 60px;
+}
+
+.myform{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 54px;
+}
+
+input{
+    border-radius: 5px !important;
+    border: solid 1px #cfcfcf !important;
+}
+
+.namedisl-r{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namedisl-r div{
+    width: 49%;
+}
+
+.namedisl-r input:first-child{
+    margin-right: 10px;
+}
+
+
+.am-form-group label span{
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    color: #005cc7;
+}
+
+.am-form-group label{
+    font-family: MicrosoftYaHei;
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.p-text{
+    text-align: center;
+    width: 94%;
+    font-family: MicrosoftYaHeiUILight;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 49px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.submit{
+    background-image: linear-gradient(90deg, #005cc7 0%, #459bd7 100%), linear-gradient( #005cc7, #005cc7);
+    background-blend-mode: normal, normal;
+    border-radius: 18px;
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 5px 20px;
+}
+
+.sub-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}

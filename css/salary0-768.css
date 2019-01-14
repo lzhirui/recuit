@@ -1,0 +1,59 @@
+.top-img{
+    width: 100%;
+}
+@font-face {
+    font-family: "Stencil";
+    src: url(../font/Stencil.ttf) format("truetype");
+}
+
+
+.top-img img{
+    width: 100%;
+}
+
+.top-img .text{
+    font-family: Stencil;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    color: #000;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.top-img .text p{
+}
+
+.box{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.p1{
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.p2{
+    font-family: MicrosoftYaHeiUILight;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #323232;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.weiyiP1{
+    margin-bottom: 30px;
+}
