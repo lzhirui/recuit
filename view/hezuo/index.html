@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)"
+          href="../../css/hezuo0-768.css?4"/>
+    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/hezuo768.css?4" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<header style="position: fixed;top: 0;width: 100%;left: 0;z-index: 100"></header>
+
+<div class="top-img">
+    <img src="../../img/apply-topimg.png" alt="" width="100%"/>
+    <div class="text">
+        <p>Become a</p>
+        <p>business partner</p>
+    </div>
+    <p class="p-text">We are actively looking for business partners globally to build
+        long-term work relationship with shared interests</p>
+</div>
+
+
+
+<div class="form">
+    <div class="">
+        <div>
+            <p class="content-title"><span>Please fill in your details below to apply</span></p>
+        </div>
+        <div class="linesOne">
+            <p></p>
+        </div>
+    </div>
+    <div class="myform">
+        <form class="am-form">
+            <div class="am-form-group">
+                <label><span>*</span>Name of your company</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Country</label>
+                <div>
+                    <input type="text" placeholder="The country where you arebased">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>The year your agency started operating</label>
+                <div>
+                    <input type="text" placeholder="Please give a year">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Which industry your business is in?</label>
+                <div>
+                    <input type="text" placeholder="Please give a year ">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Your name</label>
+                <div>
+                    <input type="text" placeholder="our full name ">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Your Phone Numb</label>
+                <div>
+                    <input type="text" placeholder="Your contact information">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Your email</label>
+                <div>
+                    <input type="text" placeholder="Your email address ">
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label><span>*</span>Your company website</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sub-div">
+                <button class="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer></footer>
+</body>
+<script>
+    var t_img; // 定时器
+    var isLoad = true; // 控制变量
+
+    $(function () {
+        // 加载完成
+        //引入顶部菜单
+        $('header').load('../layout/header.html');
+        $('footer').load('../layout/footer.html');
+    })
+
+    // 判断图片加载状况，加载完成后回调
+    isImgLoad(function () {
+        $('body').show();
+    });
+
+    // 判断图片加载的函数
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+        // 查找所有封面图，迭代处理
+        $('img').each(function () {
+            // 找到为0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完毕
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时器
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        } else {
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归扫描
+            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+        }
+    }
+</script>
+</html>

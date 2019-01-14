@@ -22,20 +22,62 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="img-fix">
-                    <div class="img-inner"><img src="../../img/h-titleimg.jpg" class="img"
-                                                width="100%"></div>
+                    <div class="img-inner">
+                        <img src="../../img/h-titleimg.jpg" class="img" width="100%">
+                        <!--轮播图背景不要动-->
+                        <div class="swiper-bg"></div>
+                        <div class="swiper-text">
+                            <div class="swiper-text-one">
+                                <p>We don't just </p>
+                                <p>regulate the system.</p>
+                                <hr/>
+                            </div>
+                            <div class="swiper-text-two">
+                                <p>Like me, with dreams, in the right place to start
+                                    our focus on the cause of life.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="img-fix">
-                    <div class="img-inner"><img src="../../img/h-titleimg.jpg" class="img"
-                                                width="100%"></div>
+                    <div class="img-inner">
+                        <img src="../../img/h-titleimg.jpg" class="img" width="100%">
+                        <!--轮播图背景不要动-->
+                        <div class="swiper-bg"></div>
+                        <div class="swiper-text">
+                            <div class="swiper-text-one">
+                                <p>We don't just </p>
+                                <p>regulate the system.</p>
+                                <hr/>
+                            </div>
+                            <div class="swiper-text-two">
+                                <p>Like me, with dreams, in the right place to start
+                                    our focus on the cause of life.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="img-fix">
-                    <div class="img-inner"><img src="../../img/h-titleimg.jpg" class="img"
-                                                width="100%"></div>
+                    <div class="img-inner">
+                        <img src="../../img/h-titleimg.jpg" class="img" width="100%">
+                        <!--轮播图背景不要动-->
+                        <div class="swiper-bg"></div>
+                        <div class="swiper-text">
+                            <div class="swiper-text-one">
+                                <p>We don't just </p>
+                                <p>regulate the system.</p>
+                                <hr/>
+                            </div>
+                            <div class="swiper-text-two">
+                                <p>Like me, with dreams, in the right place to start
+                                    our focus on the cause of life.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,18 +387,22 @@
         $('header').load('../layout/header.html');
         $('footer').load('../layout/footer.html');
         //轮播
-        var upsSwiper = new Swiper('.swiper-container', {
-            longSwipes: true,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }
-        });
+        function swiper() {
+            var upsSwiper = new Swiper('.swiper-container', {
+                longSwipes: true,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+        }
+
+        setTimeout(swiper,1000);
     })
 
     // 判断图片加载状况，加载完成后回调

@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)"
+          href="../../css/apply0-768.css?4"/>
+    <link type="text/css" media="screen and (min-width: 768px)" href="../../css/apply768.css?4" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<header style="position: fixed;top: 0;width: 100%;left: 0;z-index: 100"></header>
+
+<div class="top-img">
+    <img src="../../img/apply-topimg.png" alt="" width="100%"/>
+    <div class="text">
+        <p>Application Form</p>
+    </div>
+</div>
+
+<!--HOW IT-->
+<div class="how-it">
+    <div class="how-it-b">
+        <div class="how-it-content">
+            <div class="how-it-content-t">
+                <img src="../../img/one.png" alt="" width="70px">
+            </div>
+            <div class="how-it-content-b">
+                <p class="p1">1. Apply</p>
+                <p class="p2 onep">Choose from hundreds of ESL iobs</p>
+                <p class="p2">based on your prefenances for</p>
+                <p class="p2">sludent gce and location</p>
+            </div>
+        </div>
+        <div class="how-it-content">
+            <div class="how-it-content-t">
+                <img src="../../img/two.png" alt="" width="70px">
+            </div>
+            <div class="how-it-content-b">
+                <p class="p1">2. lnterview</p>
+                <p class="p2 onep">pur recruters wll enswer ay</p>
+                <p class="p2">quesions and set up Skype</p>
+                <p class="p2">neriews ior you wile</p>
+                <p class="p2">schools</p>
+            </div>
+        </div>
+        <div class="how-it-content">
+            <div class="how-it-content-t">
+                <img src="../../img/three.png" alt="" width="70px">
+            </div>
+            <div class="how-it-content-b">
+                <p class="p1">3. Start Work</p>
+                <p class="p2 onep">Once you have accepted a iob </p>
+                <p class="p2">offer your work Visa is processed</p>
+                <p class="p2">gand then you begin work</p>
+            </div>
+        </div>
+        <div class="how-it-content">
+            <div class="how-it-content-t">
+                <img src="../../img/four.png" alt="" width="70px">
+            </div>
+            <div class="how-it-content-b">
+                <p class="p1">4. Free Service</p>
+                <p class="p2 onep">The enie feonimeni pnoess i </p>
+                <p class="p2">ompleev inee oichane. We</p>
+                <p class="p2">mave e tee fon tne sohoose</p>
+                <p class="p2">you do nol pav us awlhno eve</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="form">
+    <form class="am-form">
+        <div class="am-form-group">
+            <label><span>*</span>Name</label>
+            <div class="namedisl-r">
+                <div>
+                    <input type="text">
+                </div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Email</label>
+            <div>
+                <div>
+                    <input type="text">
+                </div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Resume</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Nationality</label>
+            <div class="shangchuan">
+                <select class="guojia">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+        <div class="myid">
+            <div class="am-form-group wid48">
+                <label>Skype ID</label>
+                <div>
+                    <div class="am-form-group am-form-success">
+                        <input type="text" placeholder="验证成功">
+                    </div>
+                </div>
+            </div>
+            <div class="am-form-group wid48">
+                <label>WeChat ID</label>
+                <div>
+                    <div class="am-form-group am-form-success">
+                        <input type="text" placeholder="验证成功">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Nationality</label>
+            <div class="shijian">
+                <select class="time" name="sel3" id="sel3">
+                    <option value='' disabled selected style='display:none;'>Day</option>
+                </select>
+                <select class="time" name="sel2" id="sel2">
+                    <option value='' disabled selected style='display:none;'>Month</option>
+                </select>
+                <select class="time"  naayme="sel1" id="sel1">
+                    <option value='' disabled selected style='display:none;'>Year </option>
+                </select>
+            </div>
+            <p class="querentiaojian">to determine if it will be possible to obtain a work visa</p>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Bachelor's degree or higher</label>
+            <div class="higher">
+                <img src="../../img/yes-1.png" alt="">
+                <img src="../../img/no-1.png" alt="">
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>TEFL / TESOL / CELTA certificate</label>
+            <div class="higher">
+                <img src="../../img/yes-2.png" alt="">
+                <img src="../../img/no-2.png" alt="">
+            </div>
+            <p class="querentiaojian">No TEFL? We recommend INTESOL: www.GoldStarTeachers.com/INTESOL</p>
+        </div>
+        <div class="myid">
+            <div class="am-form-group wid48">
+                <label><span>*</span>Availability to start work</label>
+                <div>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="am-form-group wid48">
+                <label><span>*</span>Teaching experience</label>
+                <div>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label><span>*</span>Where are you located now?</label>
+            <div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="Job preference am-form-group">
+            <label><span>*</span>Job preference</label>
+            <div class="duoxuan">
+                <div class="box">
+                    <input type="checkbox" id="checkbox1"/><label for="checkbox1">Teach any age</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox2"/><label for="checkbox2">Teach university students</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox3"/><label for="checkbox3">Teach teenagers</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox4"/><label for="checkbox4">Teach adults</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox5"/><label for="checkbox5">Teach young learners</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox6"/><label for="checkbox6">Teach business English</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="checkbox7"/><label for="checkbox7">Director of Studies</label>
+                </div>
+            </div>
+            <p class="querentiaojian">You can select multiple options</p>
+        </div>
+        <div class="am-form-group">
+            <label>Preferences for schools or cities / comments / questions</label>
+            <div>
+                <textarea class="" rows="5" id="doc-ta-1"></textarea>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Cover letter</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Degree certificate (scan)</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>TEFL / CELTA certificate (scan)</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Passport photo page to confirm nationality and age (scan)</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Photo</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Additional documents 1 (reference letter, certificates etc)</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Additional documents 2 (reference letter, certificates etc)</label>
+            <div class="shangchuan">
+                <a href="javascript:;" class="file">选择文件
+                    <input type="file" name="" class="fil">
+                </a>
+                <p class="wenzi">未选择任何文件</p>
+                <div class="text">
+                    <img src="" alt="" width="200pxs"/>
+                    <p class="fil1-text1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label>Where did you hear about us?</label>
+            <div>
+                <input type="text">
+            </div>
+            <p class="querentiaojian">f online, please be specific</p>
+        </div>
+
+        <div class="sub-div">
+            <button class="submit">SUBMIT</button>
+        </div>
+    </form>
+</div>
+
+
+<!--footer-->
+<footer></footer>
+</body>
+<script>
+    var t_img; // 定时器
+    var isLoad = true; // 控制变量
+
+    $(function () {
+        // 加载完成
+        //引入顶部菜单
+        $('header').load('../layout/header.html');
+        $('footer').load('../layout/footer.html');
+
+        $('.fil').change(function () {
+            var str = $(this).val();
+            var arr = str.split('\\');
+
+            var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+                fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),
+                src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式
+
+            // 检查是否是图片
+            if (!fileFormat.match(/.png|.jpg|.jpeg/)) {
+                error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+                return;
+            }
+            $(this).parent().next().next().find('img').attr('src', src);
+            $(this).parent().next().hide();
+            $(this).parent().next().next().show();
+            $(this).parent().next().next().find('.fil1-text1').text(arr[arr.length - 1]);
+        })
+
+
+        //生成日期
+        function creatDate()
+        {
+            //生成1950年-2020年
+            var myDate = new Date();
+            for(var i = 2025; i >= 1950; i--)
+            {
+                //创建select项
+                var option = document.createElement('option');
+                option.setAttribute('value',i);
+                option.innerHTML = i;
+                sel1.appendChild(option);
+
+            }
+            //生成1月-12月
+            for(var i = 1; i <=12; i++){
+                var option1 = document.createElement('option');
+                option1.setAttribute('value',i);
+                option1.innerHTML = i;
+                sel2.appendChild(option1);
+            }
+            //生成1日—31日
+            for(var i = 1; i <=31; i++){
+                var option2 = document.createElement('option');
+                option2.setAttribute('value',i);
+                option2.innerHTML = i;
+                sel3.appendChild(option2);
+            }
+        }
+        creatDate();
+        //保存某年某月的天数
+        var days;
+
+        //年份点击 绑定函数
+        sel1.onclick = function()
+        {
+            //月份显示默认值
+            sel2.options[0].selected = true;
+            //天数显示默认值
+            sel3.options[0].selected = true;
+        }
+        //月份点击 绑定函数
+        sel2.onclick = function()
+        {
+            //天数显示默认值
+            sel3.options[0].selected = true;
+            //计算天数的显示范围
+            //如果是2月
+            if(sel2.value == 2)
+            {
+                //判断闰年
+                if((sel1.value % 4 === 0 && sel1.value % 100 !== 0) || sel1.value % 400 === 0)
+                {
+                    days = 29;
+                }
+                else
+                {
+                    days = 28;
+                }
+                //判断小月
+            }else if(sel2.value == 4 || sel2.value == 6 ||sel2.value == 9 ||sel2.value == 11){
+                days = 30;
+            }else{
+                days = 31;
+            }
+
+            //增加或删除天数
+            //如果是28天，则删除29、30、31天(即使他们不存在也不报错)
+            if(days == 28){
+                sel3.remove(31);
+                sel3.remove(30);
+                sel3.remove(29);
+            }
+            //如果是29天
+            if(days == 29){
+                sel3.remove(31);
+                sel3.remove(30);
+                //如果第29天不存在，则添加第29天
+                if(!sel3.options[29]){
+                    sel3.add(new Option('29','29'),null)
+                }
+            }
+            //如果是30天
+            if(days == 30){
+                sel3.remove(31);
+                //如果第29天不存在，则添加第29天
+                if(!sel3.options[29]){
+                    sel3.add(new Option('29','29'),null)
+                }
+                //如果第30天不存在，则添加第30天
+                if(!sel3.options[30]){
+                    sel3.add(new Option('30','30'),null)
+                }
+            }
+            //如果是31天
+            if(days == 31){
+                //如果第29天不存在，则添加第29天
+                if(!sel3.options[29])
+                {
+                    sel3.add(new Option('29','29'),null)
+                }
+                //如果第30天不存在，则添加第30天
+                if(!sel3.options[30])
+                {
+                    sel3.add(new Option('30','30'),null)
+                }
+                //如果第31天不存在，则添加第31天
+                if(!sel3.options[31])
+                {
+                    sel3.add(new Option('31','31'),null)
+                }
+            }
+        }
+
+        //结果显示 设置好日期时间后 弹窗通知
+        // box.onclick = function()
+        // {
+        //     //当年、月、日都已经为设置值时
+        //     if(sel1.value !='year' && sel2.value != 'month' && sel3.value !='day')
+        //     {
+        //         alert("日期时间已经设定好");
+        //     }
+        // }
+    })
+
+    // 判断图片加载状况，加载完成后回调
+    isImgLoad(function () {
+        $('body').show();
+    });
+
+    // 判断图片加载的函数
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+        // 查找所有封面图，迭代处理
+        $('img').each(function () {
+            // 找到为0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完毕
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时器
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        } else {
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归扫描
+            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+        }
+    }
+</script>
+</html>

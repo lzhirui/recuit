@@ -1,4 +1,10 @@
 
+@font-face {
+    font-family: "Stencil";
+    src: url(../font/Stencil.ttf) format("truetype");
+}
+
+
 .swiper-container {
     width: 100%;
     margin: 0 auto;
@@ -378,3 +384,60 @@ body {
 .type-jobs-top{
     padding-top: 46px;
 }
+
+
+.swiper-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8dc2ff;
+    opacity: 0.2;
+}
+
+.swiper-text{
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    color: #fff;
+}
+
+
+.swiper-text-one{
+    width: 78%;
+    margin-left: 11%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-family: Stencil;
+    text-transform: Uppercase;
+}
+
+.swiper-text-one hr{
+    background-color: #d3e7ff;
+    margin-top: 3%;
+}
+
+.swiper-text-two{
+    text-align: center;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 53px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-top: 19px;
+}
+
+.img-inner {
+    display: flex;
+    align-items: center;
+}
+
+

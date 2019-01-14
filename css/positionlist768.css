@@ -23,10 +23,10 @@
     font-size: 19px;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 18px;
-    letter-spacing: 1px;
+    line-height: 22px;
+    letter-spacing: 2px;
     color: #ffffff;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .p-top-seach{
@@ -45,7 +45,7 @@
     border: 0px;
     padding: 5px 5px 5px 20px;
     outline: none;
-    font-size: 19px;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -75,8 +75,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 3%;
-    margin-top: 30px;
+    padding: 1.5% 2%;
+    margin-top: 23px;
     border: solid 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -84,6 +84,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 70%;
 }
 .p-content-neirong-left-touxiang{
     width: 130px;
@@ -99,7 +100,7 @@
 
 .p-content-neirong-left-text-title{
     font-family: MicrosoftYaHei-Bold;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 22px;
@@ -108,7 +109,7 @@
 }
 .p-content-neirong-left-text-text{
     font-family: MicrosoftYaHeiLight;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 22px;
@@ -118,7 +119,7 @@
 }
 .p-content-neirong-left-text-time{
     font-family: MicrosoftYaHeiLight;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 22px;
@@ -163,7 +164,7 @@
 }
 
 .p-content-neirong:hover{
-    box-shadow: 8px 6px 13px #f8f8f8;
+    box-shadow: 0px 0px 15px 5px #f8f8f8;
 }
 
 .addList{
