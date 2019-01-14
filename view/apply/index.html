@@ -80,29 +80,29 @@
 <div class="form">
     <form class="am-form">
         <div class="am-form-group">
-            <label><span>*</span>Name</label>
+            <label><span>*</span>Name<span class="yanzheng nameyanzheng">! This field is required.</span></label>
             <div class="namedisl-r">
                 <div>
-                    <input type="text">
+                    <input type="text" placeholder="First" class="name name-1">
                 </div>
                 <div>
-                    <input type="text">
+                    <input type="text" placeholder="Last" class="name name-2">
                 </div>
             </div>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>Email</label>
+            <label><span>*</span>Email<span class="yanzheng emailyanzheng">! This field is required.</span></label>
             <div>
                 <div>
-                    <input type="text">
+                    <input type="text" placeholder="Enter Email" class="email email1">
                 </div>
-                <div>
-                    <input type="text">
+                <div class="towemail">
+                    <input type="text" placeholder="Confirm Email" class="email email1">
                 </div>
             </div>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>Resume</label>
+            <label><span>*</span>Resume<span class="yanzheng upfileyanzheng">! This field is required.</span></label>
             <div class="shangchuan">
                 <a href="javascript:;" class="file">选择文件
                     <input type="file" name="" class="fil">
@@ -142,7 +142,7 @@
             </div>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>Nationality</label>
+            <label><span>*</span>Nationality<span class="yanzheng">! This field is required.</span></label>
             <div class="shijian">
                 <select class="time" name="sel3" id="sel3">
                     <option value='' disabled selected style='display:none;'>Day</option>
@@ -157,17 +157,17 @@
             <p class="querentiaojian">to determine if it will be possible to obtain a work visa</p>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>Bachelor's degree or higher</label>
+            <label><span>*</span>Bachelor's degree or higher<span class="yanzheng">! This field is required.</span></label>
             <div class="higher">
-                <img src="../../img/yes-1.png" alt="">
-                <img src="../../img/no-1.png" alt="">
+                <img src="../../img/yes-2.png" alt="" class="img1click img1click-1">
+                <img src="../../img/no-2.png" alt="" class="img1click img1click-2">
             </div>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>TEFL / TESOL / CELTA certificate</label>
+            <label><span>*</span>TEFL / TESOL / CELTA certificate<span class="yanzheng">! This field is required.</span></label>
             <div class="higher">
-                <img src="../../img/yes-2.png" alt="">
-                <img src="../../img/no-2.png" alt="">
+                <img src="../../img/yes-2.png" alt="" class="img2click img2click-1">
+                <img src="../../img/no-2.png" alt="" class="img2click img2click-2">
             </div>
             <p class="querentiaojian">No TEFL? We recommend INTESOL: www.GoldStarTeachers.com/INTESOL</p>
         </div>
@@ -196,10 +196,10 @@
             </div>
         </div>
         <div class="am-form-group">
-            <label><span>*</span>Where are you located now?</label>
+            <label><span>*</span>Where are you located now?<span class="yanzheng locatedyanzheng">! This field is required.</span></label>
             <div>
                 <div>
-                    <input type="text">
+                    <input type="text" class="locatedy">
                 </div>
             </div>
         </div>
@@ -341,6 +341,11 @@
     </form>
 </div>
 
+<div class="form-bottom">
+    <p class="text1">※  After you click ‘submit’ please wait up to 3 minutes for your documents to upload</p>
+    <p class="text2">※  If you have any problems with this form please email your resume to <span>apply@GoldStarTeachers.com</span></p>
+</div>
+
 
 <!--footer-->
 <footer></footer>
@@ -355,7 +360,70 @@
         $('header').load('../layout/header.html');
         $('footer').load('../layout/footer.html');
 
+        $(".name").blur(function(){
+            if($('.name-1').val() && $('.name-2').val()){
+                $('.nameyanzheng').hide();
+            }else{
+                $('.nameyanzheng').show();
+            }
+        });
+
+        $(".email").blur(function(){
+            if($('.email-1').val() && $('.email-2').val()){
+                $('.emailyanzheng').hide();
+            }else{
+                $('.emailyanzheng').show();
+            }
+        });
+
+        $(".locatedy").blur(function(){
+            if($(this).val()){
+                $('.locatedyanzheng').hide();
+            }else{
+                $('.locatedyanzheng').show();
+            }
+        });
+
+        $('.img1click').on('click',function () {
+            $(this).parent().prev().find('.yanzheng').hide();
+            $('.img1click-1').attr('src','../../img/yes-2.png');
+            $('.img1click-2').attr('src','../../img/no-2.png');
+            if($(this).hasClass('img1click-1')){
+                $('.img1click-1').attr('src','../../img/yes-1.png');
+            }else{
+                $('.img1click-2').attr('src','../../img/no-1.png');
+            }
+        })
+
+        $('.img2click').on('click',function () {
+            $(this).parent().prev().find('.yanzheng').hide();
+            $('.img2click-1').attr('src','../../img/yes-2.png');
+            $('.img2click-2').attr('src','../../img/no-2.png');
+            if($(this).hasClass('img2click-1')){
+                $('.img2click-1').attr('src','../../img/yes-1.png');
+            }else{
+                $('.img2click-2').attr('src','../../img/no-1.png');
+            }
+        })
+
         $('.fil').change(function () {
+
+
+            var fd = new FormData();
+            fd.append("upload", 1);
+            fd.append("upfile", $(this).get(0).files[0]);
+            $.ajax({
+                url: "{php echo $this->createWebUrl('bisai',array('op'=>'uploadPDF'));}",
+                type: "POST",
+                processData: false,
+                contentType: false,
+                data: fd,
+                success: function(d) {
+                    console.log(d);
+                }
+            });
+
+
             var str = $(this).val();
             var arr = str.split('\\');
 
@@ -368,6 +436,7 @@
                 error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
                 return;
             }
+            $(this).parent().parent().prev().find('.upfileyanzheng').hide();
             $(this).parent().next().next().find('img').attr('src', src);
             $(this).parent().next().hide();
             $(this).parent().next().next().show();

@@ -343,3 +343,49 @@ input{
     justify-content: center;
     margin-top: 20px;
 }
+
+.towemail{
+    margin-top: 20px;
+}
+
+
+.am-form-group label span.yanzheng{
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #ff0000;
+}
+
+.form-bottom{
+    width: 74%;
+    min-width: 768px;
+    margin: 90px auto 0;
+}
+
+.form-bottom .text1{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.form-bottom .text2{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.form-bottom .text2 span{
+    font-family: MicrosoftYaHeiLight;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #015dc7;
+    text-align: center;
+}
